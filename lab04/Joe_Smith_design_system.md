@@ -21,7 +21,7 @@ We use a simple and clear color palette throughout the design.
 ### Header
 - **Design:** Centered text with a light grey background.
 - **Mock-up Screenshot:**
-![Header Mock-up](URL_OF_HEADER_SCREENSHOT)
+![Header Mock-up](header.png)
 
 ### Navigation
 - **Design:** Dark grey background with white text links.
