@@ -26,17 +26,17 @@ We use a simple and clear color palette throughout the design.
 ### Navigation
 - **Design:** Dark grey background with white text links.
 - **Mock-up Screenshot:**
-![Nav Mock-up](URL_OF_NAV_SCREENSHOT)
+![Nav Mock-up](navigation.png)
 
 ### Content
 - **Design:** Centered section with light grey background.
 - **Mock-up Screenshot:**
-![Content Mock-up](URL_OF_CONTENT_SCREENSHOT)
+![Content Mock-up](content.png)
 
 ### Footer
 - **Design:** Centered text with a light grey background.
 - **Mock-up Screenshot:**
-![Footer Mock-up](URL_OF_FOOTER_SCREENSHOT)
+![Footer Mock-up](footer.png)
 
 ## **Conclusion**
 This documentation serves as a concise reference guide for the design system used in the portfolio project, aiming to facilitate development and maintain consistency in design throughout the project.
