@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#dice-container {
+    display: flex;
+}
+
+.dice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#dot1 { top: 10px; left: 10px; }
+#dot2 { top: 10px; right: 10px; }
+#dot3 { bottom: 10px; left: 10px; }
+#dot4 { bottom: 10px; right: 10px; }
+#dot5 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#dot6 { top: 10px; left: 50%; transform: translateX(-50%); }
+#dot7 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+
+#dot5 {
+    display: none; /* Hide only dot5 for initial display*/
+}
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+@keyframes roll {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+}
