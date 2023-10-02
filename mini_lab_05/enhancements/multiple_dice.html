@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .die {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url('dice1.jpg'); 
+            background-size: 600% 100%;
+        }
+
+        @keyframes roll {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -600% 0;
+            }
+        }
+    </style>
+    <title>Roll a Dice</title>
+</head>
+<body>
+    <button id="roll-button">Roll Dice</button>
+    <div id="dice-container">
+        <div class="die" id="die1"></div>
+        <div class="die" id="die2"></div>
+        <div class="die" id="die3"></div>
+    </div>
+
+    <script>
+        const rollButton = document.getElementById('roll-button');
+        const die1 = document.getElementById('die1');
+        const die2 = document.getElementById('die2');
+        const die3 = document.getElementById('die3');
+
+        rollButton.addEventListener('click', onRollButtonClick);
+
+        function onRollButtonClick() {
+            rollButton.disabled = true;
+
+            startAnimation(die1);
+            startAnimation(die2);
+            startAnimation(die3);
+            
+            setTimeout(() => {
+                stopAnimation(die1);
+                stopAnimation(die2);
+                stopAnimation(die3);
+                rollButton.disabled = false;
+            }, 1000);
+        }
+
+        function startAnimation(die) {
+            die.style.animation = 'roll 1s steps(6) infinite';
+        }
+
+        function stopAnimation(die) {
+            const randomNumber = Math.floor(Math.random() * 6) + 1;
+            die.style.animation = 'none';
+            die.style.backgroundPosition = -100 * (randomNumber - 1) + '% 0';
+        }
+    </script>
+</body>
+</html>
