@@ -26,8 +26,8 @@ Our Yatzy dice bring a unique blend of tradition and modern design. Each die boa
 
 ### Game Mock-ups
 
-- ![game board](game_board.jpg)
-- ![scordcard](scorecard.jpg)
+- ![game board](game_board.png)
+- ![scordcard](scorecard.png)
 
 ### Playing Instructions
 - Game Start: Each player rolls a die; the highest roll begins the game.
