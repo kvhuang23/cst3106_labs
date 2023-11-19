@@ -35,6 +35,6 @@ This entity contains details about the rooms available for patient care. It trac
 - `status` (boolean): The occupancy status of the room; 'true' if occupied, 'false' if available.
 
 ## Database ERD (Entity-Relationship Diagram)
-![Database Schema](schema.png)
+![Database Schema](schema1.png)
 
 The ERD illustrates the relationships between entities. The `Patients` entity is connected to the `Priorities` and `Rooms` entities through foreign keys, indicating the relationship between a patient's urgency level and their room assignment.
