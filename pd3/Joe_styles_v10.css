@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #007BFF;
+    --text-color: #555;
+    --border-color: #ddd;
+    --background-color: #fff;
+    --secondary-color: #f5f5f5;
+    --accent-color: #444;
+}
+
+/* Basic styling for the resume */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--darker-gray);
+    background-color: var(--very-light-gray);
+}
+
+header, nav, section, article, aside, footer {
+    margin: 2vh 2vw;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(245, 245, 245, 0.9);
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--accent-color);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 0.5em 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li {
+    margin-right: 15px; /* Added margin to <li> for spacing between links */
+}
+
+nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+article, aside, section {
+    flex: 1;
+    margin: 0 1em;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+h1, h2, h3 {
+    color: var(--darker-gray);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3em;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1em;
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+}
